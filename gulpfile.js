@@ -12,3 +12,6 @@ function compilaSass(){
 
 exports.default = compilaSass;
 
+exports.watch = function(){
+    gulp.watch('./src/styles/*.scss', compilaSass)
+}

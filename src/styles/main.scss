@@ -1,3 +1,86 @@
-body{
-    background-color: rgb(45, 175, 33);
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'cta';
+@use 'about';
+@use 'seasons';
+@use 'faq';
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url('../../assets/fonts/Gilroy-Regular.woff2');
+    font-weight: 500;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy, sans-serif;
+    list-style: none;
+}
+
+body{ 
+    background-color: variaveis.$corDeFundo;
+}
+
+
+@mixin title($fontSize:50px){
+    font-size: $fontSize;
+    margin: 16px 0px 8px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin subTitle($fontSize:40px){
+    font-size: $fontSize ;
+    margin: 16px 0px 8px;
+    color: #ffffff;
+}
+
+@mixin text($fontSize:20px){
+    font-size: $fontSize;
+    color: #ffffff;
+    margin: 16px 0px 8px;
+}
+
+@mixin textSmall($fontSize:12px){
+    font-size: $fontSize;
+    color: #ffffff;
+    margin: 0px 0px 16px
+}
+
+.title{
+    @include title;
+}
+
+.subtitle{
+    @include subTitle;
+}
+
+.text{
+    @include text;
+}
+.textSmall{
+    @include textSmall;
+}
+
+.button{
+    @include text(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    background-color: variaveis.$corDeFundoBataoPrimario;
+    color: variaveis.$corTextoSecundario;
+    padding:8px 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+
 }

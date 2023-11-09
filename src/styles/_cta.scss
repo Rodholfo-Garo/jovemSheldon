@@ -1,0 +1,23 @@
+.cta{
+    display: flex;
+    align-items: center;
+    background-image: url(../../images/gradientSection2.jpg);
+    background-size: cover;
+    height: 108px;
+    margin-top: 1.5rem;
+
+    &__container{
+        width: 100%;
+        max-width: 1140px;
+        padding: 1.5em 1.5em;
+        margin: 0 auto;
+    
+
+        &__row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+        }
+    }
+}

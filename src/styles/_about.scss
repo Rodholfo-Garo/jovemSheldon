@@ -1,0 +1,21 @@
+@use 'variaveis';
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container{
+        max-width: 1140px;
+        width: 100%;
+        margin: 3rem 3rem;
+
+        &__row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 15px;
+            gap: 20px;
+
+        }
+    }
+}

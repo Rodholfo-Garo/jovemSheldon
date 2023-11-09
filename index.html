@@ -5,10 +5,190 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Jovem Sheldon</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./build/styles/main.css">
 </head>
 <body>
-    <h1>Jovem Sheldon</h1>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./images/hbo-max-h-w-l.svg" alt="Logo HBO">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button" href="#">Entrar</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button" href="#">Assinar Agora</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__container__content">
+                <div>
+                    <h1>Jovem Sheldon</h1>
+                </div>
+                <div >
+                    <img src="./images/hero.jpg" alt="Jovem Sheldon">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="cta__container">
+            <div class="cta__container__row">
+                <h2 class="title">
+                    Aproveite o máximo do entretenimento
+                </h2>
+                <div>
+                    <a href="#" class="button">Assine Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__container">
+            <div class="about__container__row">
+                <div>
+                    <p class="text">Para Sheldon Cooper, de 9 anos, não é fácil crescer no leste do Texas. Ser uma mente brilhante em matemática e ciências avançadas nem sempre é útil em uma terra onde a igreja e o futebol dominam a cena. E enquanto o vulnerável, talentoso e um tanto ingênuo Sheldon lida com o mundo, sua família normal precisa encontrar uma maneira de lidar com ele. Durante 12 anos, em The Big Bang Theory, o público conheceu o emblemático, excêntrico e extraordinário Sheldon Cooper. Essa comédia de meia hora nos dá a chance de conhecê-lo na infância, enquanto ele embarca em sua jornada inocente, desajeitada e esperançosa em direção ao homem que ele se tornará.</p>
+                </div>
+                <div>
+                    <p class="text">Estrelando: Iain Armitage, Zoe Perry, Lance Barber, Montana Jordan, Raegan Revord, Matt Hobby, Annie Potts, Jim Parsons, Emily Osment, Ian Armitage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seasons">
+        <div class="seasons__container">
+            <nav class="seasons__container__tabs">
+                <div>
+                    <h1 class="title" >Assista Agora</h1>
+                </div>
+                <div>
+                    <button data-tab-button="Temporada_1" class="seasons__tabs__button seasons__tabs__button--is-active">Temporada 1</button>
+                    <button data-tab-button="Temporada_2" class="seasons__tabs__button ">Temporada 2</button>
+                    <button data-tab-button="Temporada_3" class="seasons__tabs__button">Temporada 3</button>
+                </div>
+                
+            </nav>
+            <ul data-tab-id="Temporada_1" class="seasons__list seasons__list--is-active">
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season1/tile (2).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season1/tile (3).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season1/tile (4).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season1/tile (5).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season1/tile (6).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season1/tile (7).jpg" alt="">
+                </li>                
+            </ul>
+            <ul data-tab-id="Temporada_2" class="seasons__list ">
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season2/tile (2).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season2/tile (3).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season2/tile (4).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season2/tile (5).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season2/tile (6).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season2/tile (7).jpg" alt="">
+                </li>                
+            </ul>
+            <ul data-tab-id="Temporada_3" class="seasons__list ">
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season3/tile (1).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season3/tile (3).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season3/tile (4).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season3/tile (5).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season3/tile (6).jpg" alt="">
+                </li>
+                <li class="seasons__list__item">
+                    <img src="./images/seasons/season3/tile (7).jpg" alt="">
+                </li>                
+            </ul>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="faq__container">
+            <div class="faq__container__row">
+                <h2 class="title">
+                    Perguntas frequentes sobre o HBOmax
+                </h2>
+                
+            </div>
+            <ul class="faq__questions">
+                <li class="faq__questions__item faq__questions__item--is-open">
+                    <div data-tab-question class="faq__questions__item__question subtitle">
+                        Perguta 1
+                    </div>
+                    <div class="faq__questions__item__answer text">
+                        Resposta da pergunta 1.
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div data-tab-question class="faq__questions__item__question subtitle">
+                        Perguta 2
+                    </div>
+                    <div class="faq__questions__item__answer text">
+                        Resposta da pergunta 2.
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div data-tab-question class="faq__questions__item__question subtitle">
+                        Perguta 3
+                    </div>
+                    <div class="faq__questions__item__answer text">
+                        Resposta da pergunta 3.
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div data-tab-question class="faq__questions__item__question subtitle">
+                        Perguta 4
+                    </div>
+                    <div class="faq__questions__item__answer text">
+                        Resposta da pergunta 4.
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div data-tab-question class="faq__questions__item__question subtitle">
+                        Perguta 5
+                    </div>
+                    <div class="faq__questions__item__answer text">
+                        Resposta da pergunta 5.
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <script src="./src/scripts/scripts.js"></script>
 </body>
 </html>
