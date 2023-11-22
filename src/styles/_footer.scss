@@ -3,12 +3,14 @@
     
     &__container{
         
-        width: 100%;
         max-width: 1140px;
+        width: 100%;
         padding: 1.5em 1.5em;
         margin: 0 auto;
         text-align: center;
         padding-bottom: 20px;
+
+       
         
         &__row{
             display: flex;
@@ -20,7 +22,13 @@
             padding: 0 85px;
             a{
                 text-decoration: none;
-            }                
+            }
+            @media(max-width:764px){
+                padding: 0;
+                margin: 0;
+            }
+            
+            
         }  
     }
     
@@ -41,6 +49,10 @@
                 &:hover{
                     color: aqua;
                 }
+            }
+            @media(max-width:764px){
+                padding: 0;
+                margin: 0;
             }
         }
             

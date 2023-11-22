@@ -3,6 +3,13 @@
     h2{
         margin-bottom: 24px;
     }
+    @media(max-width:764px){
+        h2{
+            margin: 0 0 20px; 
+            font-size: 30px;
+            text-align: center;
+        }
+    }
 
         &__container{
             width: 100%;
@@ -23,10 +30,17 @@
             &__item{
                 margin-bottom: 24px;
 
+                @media(max-width:764px){
+                    div:first-child{
+                        font-size: 20px;
+                    } 
+                } 
+                
                 &__question{
                     cursor: pointer;
                     position: relative;
                     padding-right: 24px;
+
 
                     &::after{
                         content: '+';
@@ -37,7 +51,11 @@
                         display: flex;
                         align-items: center;
                         font-size: 40px;
-
+                        @media(max-width:764px){
+                            
+                                font-size: 30px;
+                            
+                        }
                     }
                 }
 
@@ -46,7 +64,6 @@
                     padding: 0;
                     overflow: hidden;
                     transition: height, .5s ease;
-
                 }
 
                 &--is-open{
@@ -57,10 +74,16 @@
                     .faq__questions__item__answer{
                         height: auto;
                         padding-bottom: 24px;
-                        
-    
                     }
+                    @media(max-width:764px){
+                        div:first-child{
+                            font-size: 20px;
+                        } 
+                    }
+                    
                 }
+                
             }
+            
         }
     }
