@@ -7,7 +7,7 @@ function compilaSass(){
     .pipe(sass({
         outputStyle:'compressed'
     }))
-    .pipe(gulp.dest('./build/styles'));
+    .pipe(gulp.dest('./dist/styles'));
 }
 
 exports.default = compilaSass;
